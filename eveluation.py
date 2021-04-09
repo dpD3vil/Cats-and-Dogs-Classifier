@@ -7,17 +7,6 @@ from tensorflow.keras.optimizers import Adam, RMSprop
 from tensorflow.keras.applications import VGG16, ResNet50, InceptionResNetV2, InceptionV3, VGG19
 import os 
 os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
-#train_dir = r"C:\Users\dwark\Desktop\ML\Projects\Cats_Dogs Classifier\cats_and_dogs_small\train"
-#test_dir = r"C:\Study\dks\ML\Projects\Cats_Dogs Classifier\cats_and_dogs_small\test"
-#validation_dir = r"C:\Users\dwark\Desktop\ML\Projects\Cats_Dogs Classifier\cats_and_dogs_small\validation"
-
-#Test_Datagen = ImageDataGenerator(rescale=1./255)
-#Test_gen = Test_Datagen.flow_from_directory(
-    #  test_dir,
-    #target_size=(200, 200),
-    #batch_size=20,
-    #class_mode="binary",
-    #shuffle=False)
 
 model = tf.keras.models.load_model(
     r'model_2.h5')
